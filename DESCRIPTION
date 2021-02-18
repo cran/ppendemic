@@ -1,6 +1,6 @@
 Package: ppendemic
 Title: The Red Book of Endemic Plants of Peru
-Version: 0.1.0
+Version: 0.1.1
 Authors@R: 
     c(person(given = "Paul Efren",
            family = "Santos Andrade",
@@ -27,6 +27,6 @@ Author: Paul Efren Santos Andrade [aut, cre]
   Lucely L. Vilca Bustamante [aut]
 Maintainer: Paul Efren Santos Andrade <paulefrens@gmail.com>
 NeedsCompilation: no
-Packaged: 2021-02-17 14:03:27 UTC; user
+Packaged: 2021-02-18 16:31:03 UTC; user
 Repository: CRAN
-Date/Publication: 2021-02-17 21:10:03 UTC
+Date/Publication: 2021-02-18 23:10:02 UTC

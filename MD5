@@ -1,9 +1,9 @@
-284cd08c3db90170645f91e00444dfbc *DESCRIPTION
+c1901a45073855a07b2979c3796e976c *DESCRIPTION
 128336d2dd7a38fbf929a046a63ab527 *LICENSE
 57bd5affe0632cb0c7dd270b461d26a4 *NAMESPACE
 7408af9ed12f673bad332de312add13e *R/globals.R
 94fe402bbb8ecd4e7bce91efc511b00b *R/pep_check.R
-d8e991af346017a3f9992bc98ee7425a *R/pep_regdep_map.R
+64ed8dc546d9b4b418731f9d25fd08ad *R/pep_regdep_map.R
 b46382f0cb81f4fe665655ee145fe424 *R/peru_shp.R
 6b87ab142e3826f0ffa06928b77456ee *R/pipe_poorman.R
 e0ef681901465d24f47f9139cb2c086a *R/ppendemic-package.R
@@ -12,7 +12,7 @@ c8704ccb9951efacc1d1e986bb41b955 *R/registro_departamental.R
 718089eadac269b1e662121a0178800f *R/species_pep.R
 085126737e137e62bbd4509fc802675d *R/sysdata.rda
 404c2a293625bb5f3080cb21a03b6367 *R/zzz.R
-754b98cd4a49319dd7e0273ab44bb76e *README.md
+fc692c259845a7818cee75923c4ac7d9 *README.md
 2a8fedf237289ab5cc3d16244d5fbc70 *data/peru.rda
 29ee6c7c4141ef9702a02e98553e2c8f *data/ppendemic.R
 0bc332bd7512bd286b2669d99aadef1e *inst/CITATION
