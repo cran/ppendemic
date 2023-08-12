@@ -1,8 +1,8 @@
 Package: ppendemic
-Title: The Red Book of Endemic Plants of Peru
-Version: 0.1.1
+Title: A Glimpse at the Diversity of Peru's Endemic Plants
+Version: 0.1.6
 Authors@R: 
-    c(person(given = "Paul Efren",
+    c(person(given = "Paul E.",
            family = "Santos Andrade",
            role = c("aut", "cre"),
            email = "paulefrens@gmail.com",
@@ -11,22 +11,21 @@ Authors@R:
            family = "Vilca Bustamante",
            role = "aut",
            email = "vilca.lu01@gmail.com")) 
-Date: 2021-02-05
-Description: Gives help to access the information from  "The Red Book of Endemic Plants of Peru".  The package contains a database with cleaned and standardized botanical data including occurrence and taxonomic data. The original source could be found in "León, Blanca, Nigel Pitman, y José Roque. (2006). Introducción a Las Plantas Endémicas Del Perú"<doi:10.15381/rpb.v13i2.1782><https://revistasinvestigacion.unmsm.edu.pe/index.php/rpb/issue/view/153>.
+Description: Introducing a novel and updated database showcasing Peru's endemic plants. This meticulously compiled and revised botanical collection encompasses a remarkable assemblage of over 7,249 distinct species. The data for this resource was sourced from the work of Govaerts, R., Nic Lughadha, E., Black, N. et al., titled 'The World Checklist of Vascular Plants: A continuously updated resource for exploring global plant diversity', published in Sci Data 8, 215 (2021) <doi:10.1038/s41597-021-00997-6>.
 License: MIT + file LICENSE
 URL: https://github.com/PaulESantos/ppendemic/
-BugReports: https://github.com/PaulESantos/ppendemic/issues
-Suggests: knitr, rmarkdown
+BugReports: https://github.com/PaulESantos/ppendemic/issues/
+Suggests: knitr, rmarkdown, testthat (>= 3.0.0)
 Encoding: UTF-8
 LazyData: true
-RoxygenNote: 7.1.1
+RoxygenNote: 7.2.3
 Depends: R (>= 3.5.0),
-Imports: sf, ggplot2, rlang, dplyr
-Author: Paul Efren Santos Andrade [aut, cre]
+Config/testthat/edition: 3
+Maintainer: Paul E. Santos Andrade <paulefrens@gmail.com>
+NeedsCompilation: no
+Packaged: 2023-08-11 01:28:36 UTC; user
+Author: Paul E. Santos Andrade [aut, cre]
     (<https://orcid.org/0000-0002-6635-0375>),
   Lucely L. Vilca Bustamante [aut]
-Maintainer: Paul Efren Santos Andrade <paulefrens@gmail.com>
-NeedsCompilation: no
-Packaged: 2021-02-18 16:31:03 UTC; user
 Repository: CRAN
-Date/Publication: 2021-02-18 23:10:02 UTC
+Date/Publication: 2023-08-12 09:00:05 UTC
