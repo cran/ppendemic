@@ -1,6 +1,6 @@
 Package: ppendemic
 Title: A Glimpse at the Diversity of Peru's Endemic Plants
-Version: 0.1.9
+Version: 0.2.0
 Authors@R: 
       c(person(given = "Paul E.",
                  family = "Santos Andrade",
@@ -19,17 +19,17 @@ BugReports: https://github.com/PaulESantos/ppendemic/issues/
 Suggests: knitr, rmarkdown, testthat (>= 3.0.0)
 Encoding: UTF-8
 LazyData: true
-RoxygenNote: 7.3.2
+RoxygenNote: 7.3.3
 Depends: R (>= 4.1.0),
 Config/testthat/edition: 3
 Maintainer: Paul E. Santos Andrade <paulefrens@gmail.com>
-Imports: assertthat, dplyr, fuzzyjoin, memoise, progress, purrr, readr,
-        stringr, tibble, tidyr
+Imports: assertthat, cli, dplyr, fuzzyjoin, memoise, progress, purrr,
+        readr, stringr, tibble, tidyr
 NeedsCompilation: no
-Packaged: 2025-06-09 04:14:50 UTC; PC
+Packaged: 2026-01-12 02:53:51 UTC; PC
 Author: Paul E. Santos Andrade [aut, cre] (ORCID:
     <https://orcid.org/0000-0002-6635-0375>),
   Lucely L. Vilca Bustamante [aut] (ORCID:
     <https://orcid.org/0000-0002-5559-1296>)
 Repository: CRAN
-Date/Publication: 2025-06-09 04:30:02 UTC
+Date/Publication: 2026-01-12 06:10:26 UTC
