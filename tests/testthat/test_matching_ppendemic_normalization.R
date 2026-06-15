@@ -9,7 +9,7 @@ test_that("name normalization tolerates case and underscore separators", {
 test_that("hybrid mark is removed with warning", {
   expect_warning(
     out <- matching_ppendemic("Aa x aurantiaca"),
-    "hybrids have been removed"
+    "hybrids has been removed"
   )
 
   expect_equal(nrow(out), 1)
@@ -27,4 +27,15 @@ test_that("output includes core columns required by downstream use", {
   )
 
   expect_true(all(expected %in% names(out)))
+})
+
+test_that("sp. and spp. are treated as indeterminate genus-level names", {
+  expect_message(
+    out <- matching_ppendemic(c("Piper sp.", "Piper sp. 1", "Piper spp.")),
+    "genus level"
+  )
+
+  expect_true(all(out$Rank == 1))
+  expect_true(all(is.na(out$Orig.Species)))
+  expect_true(all(out$Endemic.Tag == "Not endemic"))
 })

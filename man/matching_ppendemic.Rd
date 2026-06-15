@@ -12,7 +12,9 @@ matching_ppendemic(
 )
 }
 \arguments{
-\item{splist}{A vector containing the species list.}
+\item{splist}{A non-empty character vector containing taxon names. Missing
+and empty values are not accepted. Indeterminate \code{sp.} and \code{spp.} names are
+treated as genus-level records and are not classified as endemic taxa.}
 
 \item{max_dist}{Maximum edit distance used in fuzzy matching steps.
 Defaults to 2 (the default in fuzzyjoin::stringdist_left_join()).}
@@ -43,5 +45,11 @@ The maximum edit distance can be controlled through \code{max_dist}.
 The function matching_ppendemic returns a tibble with new columns Matched.Genus, Matched.Species, and Matched.Infraspecies, containing the matched names or NA if no match was found.
 
 Additionally, a logical column is added for each function called, allowing users to see which functions were applied to each name during the matching process. If a process column shows \code{NA}, the corresponding function was not called for that name because it was already matched by a preceding function.
+}
+\examples{
+\donttest{
+matching_ppendemic(c("Aa aurantiaca", "Aa aurantiaaia", "Werneria nubigena"))
+}
+
 }
 \keyword{internal}

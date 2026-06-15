@@ -1,0 +1,1374 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta charset="utf-8" />
+<meta name="generator" content="pandoc" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+<meta name="author" content="ppendemic" />
+
+
+<title>Cambios entre versiones de la base de plantas endemicas del Peru</title>
+
+<script>// Pandoc 2.9 adds attributes on both header and div. We remove the former (to
+// be compatible with the behavior of Pandoc < 2.8).
+document.addEventListener('DOMContentLoaded', function(e) {
+  var hs = document.querySelectorAll("div.section[class*='level'] > :first-child");
+  var i, h, a;
+  for (i = 0; i < hs.length; i++) {
+    h = hs[i];
+    if (!/^h[1-6]$/i.test(h.tagName)) continue;  // it should be a header h1-h6
+    a = h.attributes;
+    while (a.length > 0) h.removeAttribute(a[0].name);
+  }
+});
+</script>
+
+<style type="text/css">
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+span.underline{text-decoration: underline;}
+div.column{display: inline-block; vertical-align: top; width: 50%;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+</style>
+
+
+
+<style type="text/css">
+code {
+white-space: pre;
+}
+.sourceCode {
+overflow: visible;
+}
+</style>
+<style type="text/css" data-origin="pandoc">
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+{ counter-reset: source-line 0; }
+pre.numberSource code > span
+{ position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+{ content: counter(source-line);
+position: relative; left: -1em; text-align: right; vertical-align: baseline;
+border: none; display: inline-block;
+-webkit-touch-callout: none; -webkit-user-select: none;
+-khtml-user-select: none; -moz-user-select: none;
+-ms-user-select: none; user-select: none;
+padding: 0 4px; width: 4em;
+color: #aaaaaa;
+}
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa; padding-left: 4px; }
+div.sourceCode
+{ }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } 
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } 
+code span.at { color: #7d9029; } 
+code span.bn { color: #40a070; } 
+code span.bu { color: #008000; } 
+code span.cf { color: #007020; font-weight: bold; } 
+code span.ch { color: #4070a0; } 
+code span.cn { color: #880000; } 
+code span.co { color: #60a0b0; font-style: italic; } 
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } 
+code span.do { color: #ba2121; font-style: italic; } 
+code span.dt { color: #902000; } 
+code span.dv { color: #40a070; } 
+code span.er { color: #ff0000; font-weight: bold; } 
+code span.ex { } 
+code span.fl { color: #40a070; } 
+code span.fu { color: #06287e; } 
+code span.im { color: #008000; font-weight: bold; } 
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } 
+code span.kw { color: #007020; font-weight: bold; } 
+code span.op { color: #666666; } 
+code span.ot { color: #007020; } 
+code span.pp { color: #bc7a00; } 
+code span.sc { color: #4070a0; } 
+code span.ss { color: #bb6688; } 
+code span.st { color: #4070a0; } 
+code span.va { color: #19177c; } 
+code span.vs { color: #4070a0; } 
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } 
+</style>
+<script>
+// apply pandoc div.sourceCode style to pre.sourceCode instead
+(function() {
+  var sheets = document.styleSheets;
+  for (var i = 0; i < sheets.length; i++) {
+    if (sheets[i].ownerNode.dataset["origin"] !== "pandoc") continue;
+    try { var rules = sheets[i].cssRules; } catch (e) { continue; }
+    var j = 0;
+    while (j < rules.length) {
+      var rule = rules[j];
+      // check if there is a div.sourceCode rule
+      if (rule.type !== rule.STYLE_RULE || rule.selectorText !== "div.sourceCode") {
+        j++;
+        continue;
+      }
+      var style = rule.style.cssText;
+      // check if color or background-color is set
+      if (rule.style.color === '' && rule.style.backgroundColor === '') {
+        j++;
+        continue;
+      }
+      // replace div.sourceCode by a pre.sourceCode rule
+      sheets[i].deleteRule(j);
+      sheets[i].insertRule('pre.sourceCode{' + style + '}', j);
+    }
+  }
+})();
+</script>
+
+
+
+
+<style type="text/css">body {
+background-color: #fff;
+margin: 1em auto;
+max-width: 700px;
+overflow: visible;
+padding-left: 2em;
+padding-right: 2em;
+font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+font-size: 14px;
+line-height: 1.35;
+}
+#TOC {
+clear: both;
+margin: 0 0 10px 10px;
+padding: 4px;
+width: 400px;
+border: 1px solid #CCCCCC;
+border-radius: 5px;
+background-color: #f6f6f6;
+font-size: 13px;
+line-height: 1.3;
+}
+#TOC .toctitle {
+font-weight: bold;
+font-size: 15px;
+margin-left: 5px;
+}
+#TOC ul {
+padding-left: 40px;
+margin-left: -1.5em;
+margin-top: 5px;
+margin-bottom: 5px;
+}
+#TOC ul ul {
+margin-left: -2em;
+}
+#TOC li {
+line-height: 16px;
+}
+table {
+margin: 1em auto;
+border-width: 1px;
+border-color: #DDDDDD;
+border-style: outset;
+border-collapse: collapse;
+}
+table th {
+border-width: 2px;
+padding: 5px;
+border-style: inset;
+}
+table td {
+border-width: 1px;
+border-style: inset;
+line-height: 18px;
+padding: 5px 5px;
+}
+table, table th, table td {
+border-left-style: none;
+border-right-style: none;
+}
+table thead, table tr.even {
+background-color: #f7f7f7;
+}
+p {
+margin: 0.5em 0;
+}
+blockquote {
+background-color: #f6f6f6;
+padding: 0.25em 0.75em;
+}
+hr {
+border-style: solid;
+border: none;
+border-top: 1px solid #777;
+margin: 28px 0;
+}
+dl {
+margin-left: 0;
+}
+dl dd {
+margin-bottom: 13px;
+margin-left: 13px;
+}
+dl dt {
+font-weight: bold;
+}
+ul {
+margin-top: 0;
+}
+ul li {
+list-style: circle outside;
+}
+ul ul {
+margin-bottom: 0;
+}
+pre, code {
+background-color: #f7f7f7;
+border-radius: 3px;
+color: #333;
+white-space: pre-wrap; 
+}
+pre {
+border-radius: 3px;
+margin: 5px 0px 10px 0px;
+padding: 10px;
+}
+pre:not([class]) {
+background-color: #f7f7f7;
+}
+code {
+font-family: Consolas, Monaco, 'Courier New', monospace;
+font-size: 85%;
+}
+p > code, li > code {
+padding: 2px 0px;
+}
+div.figure {
+text-align: center;
+}
+img {
+background-color: #FFFFFF;
+padding: 2px;
+border: 1px solid #DDDDDD;
+border-radius: 3px;
+border: 1px solid #CCCCCC;
+margin: 0 5px;
+}
+h1 {
+margin-top: 0;
+font-size: 35px;
+line-height: 40px;
+}
+h2 {
+border-bottom: 4px solid #f7f7f7;
+padding-top: 10px;
+padding-bottom: 2px;
+font-size: 145%;
+}
+h3 {
+border-bottom: 2px solid #f7f7f7;
+padding-top: 10px;
+font-size: 120%;
+}
+h4 {
+border-bottom: 1px solid #f7f7f7;
+margin-left: 8px;
+font-size: 105%;
+}
+h5, h6 {
+border-bottom: 1px solid #ccc;
+font-size: 105%;
+}
+a {
+color: #0033dd;
+text-decoration: none;
+}
+a:hover {
+color: #6666ff; }
+a:visited {
+color: #800080; }
+a:visited:hover {
+color: #BB00BB; }
+a[href^="http:"] {
+text-decoration: underline; }
+a[href^="https:"] {
+text-decoration: underline; }
+
+code > span.kw { color: #555; font-weight: bold; } 
+code > span.dt { color: #902000; } 
+code > span.dv { color: #40a070; } 
+code > span.bn { color: #d14; } 
+code > span.fl { color: #d14; } 
+code > span.ch { color: #d14; } 
+code > span.st { color: #d14; } 
+code > span.co { color: #888888; font-style: italic; } 
+code > span.ot { color: #007020; } 
+code > span.al { color: #ff0000; font-weight: bold; } 
+code > span.fu { color: #900; font-weight: bold; } 
+code > span.er { color: #a61717; background-color: #e3d2d2; } 
+</style>
+
+
+
+
+</head>
+
+<body>
+
+
+
+
+<h1 class="title toc-ignore">Cambios entre versiones de la base de
+plantas endemicas del Peru</h1>
+<h4 class="author">ppendemic</h4>
+
+
+
+<div id="objetivo" class="section level2">
+<h2>Objetivo</h2>
+<p>Las tablas <code>ppendemic_tab14</code>, <code>ppendemic_tab15</code>
+y <code>ppendemic_tab16</code> representan extracciones sucesivas de
+WCVP. Compararlas permite identificar:</p>
+<ul>
+<li>nombres que permanecen entre versiones;</li>
+<li>posibles inclusiones y exclusiones;</li>
+<li>correcciones ortograficas o de terminacion;</li>
+<li>cambios de rango infraespecifico; y</li>
+<li>posibles transferencias entre generos.</li>
+</ul>
+<p>Una inclusion o exclusion observada no implica necesariamente que una
+especie haya sido descubierta o dejado de ser endemica. Tambien puede
+reflejar cambios taxonomicos, nomenclaturales o de los criterios de
+distribucion usados por WCVP. Por eso, esta viñeta distingue los cambios
+observados de su posible interpretacion.</p>
+</div>
+<div id="funciones-para-comparar-versiones" class="section level2">
+<h2>Funciones para comparar versiones</h2>
+<p>La unidad de comparacion es <code>taxon_name</code>. Los nombres
+presentes solo en la version nueva son inclusiones observadas y los
+presentes solo en la version anterior son exclusiones observadas.</p>
+<p>Para detectar posibles reemplazos se calcula una puntuacion
+conservadora entre cada nombre retirado y cada nombre añadido. La
+puntuacion combina similitud textual y coincidencias en epitetos,
+autoria, familia y año de publicacion. Estos vinculos son candidatos
+para revision, no sinonimias confirmadas.</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" tabindex="-1"></a>candidate_replacements <span class="ot">&lt;-</span> <span class="cf">function</span>(removed, added) {</span>
+<span id="cb1-2"><a href="#cb1-2" tabindex="-1"></a>  <span class="cf">if</span> (<span class="fu">nrow</span>(removed) <span class="sc">==</span> <span class="dv">0</span><span class="dt">L</span> <span class="sc">||</span> <span class="fu">nrow</span>(added) <span class="sc">==</span> <span class="dv">0</span><span class="dt">L</span>) {</span>
+<span id="cb1-3"><a href="#cb1-3" tabindex="-1"></a>    <span class="fu">return</span>(tibble<span class="sc">::</span><span class="fu">tibble</span>())</span>
+<span id="cb1-4"><a href="#cb1-4" tabindex="-1"></a>  }</span>
+<span id="cb1-5"><a href="#cb1-5" tabindex="-1"></a></span>
+<span id="cb1-6"><a href="#cb1-6" tabindex="-1"></a>  same_val <span class="ot">&lt;-</span> <span class="cf">function</span>(x, y) {</span>
+<span id="cb1-7"><a href="#cb1-7" tabindex="-1"></a>    <span class="sc">!</span><span class="fu">is.na</span>(x) <span class="sc">&amp;</span> <span class="sc">!</span><span class="fu">is.na</span>(y) <span class="sc">&amp;</span> x <span class="sc">!=</span> <span class="st">&quot;&quot;</span> <span class="sc">&amp;</span> y <span class="sc">!=</span> <span class="st">&quot;&quot;</span> <span class="sc">&amp;</span> x <span class="sc">==</span> y</span>
+<span id="cb1-8"><a href="#cb1-8" tabindex="-1"></a>  }</span>
+<span id="cb1-9"><a href="#cb1-9" tabindex="-1"></a></span>
+<span id="cb1-10"><a href="#cb1-10" tabindex="-1"></a>  name_sim <span class="ot">&lt;-</span> <span class="cf">function</span>(x, y) {</span>
+<span id="cb1-11"><a href="#cb1-11" tabindex="-1"></a>    distance <span class="ot">&lt;-</span> <span class="fu">diag</span>(<span class="fu">adist</span>(<span class="fu">tolower</span>(x), <span class="fu">tolower</span>(y)))</span>
+<span id="cb1-12"><a href="#cb1-12" tabindex="-1"></a>    lengths <span class="ot">&lt;-</span> <span class="fu">pmax</span>(<span class="fu">nchar</span>(x), <span class="fu">nchar</span>(y))</span>
+<span id="cb1-13"><a href="#cb1-13" tabindex="-1"></a>    <span class="dv">1</span> <span class="sc">-</span> distance <span class="sc">/</span> lengths</span>
+<span id="cb1-14"><a href="#cb1-14" tabindex="-1"></a>  }</span>
+<span id="cb1-15"><a href="#cb1-15" tabindex="-1"></a></span>
+<span id="cb1-16"><a href="#cb1-16" tabindex="-1"></a>  pairs <span class="ot">&lt;-</span> dplyr<span class="sc">::</span><span class="fu">cross_join</span>(</span>
+<span id="cb1-17"><a href="#cb1-17" tabindex="-1"></a>    removed <span class="sc">%&gt;%</span> dplyr<span class="sc">::</span><span class="fu">rename_with</span>(<span class="sc">~</span> <span class="fu">paste0</span>(.x, <span class="st">&quot;_old&quot;</span>)),</span>
+<span id="cb1-18"><a href="#cb1-18" tabindex="-1"></a>    added <span class="sc">%&gt;%</span> dplyr<span class="sc">::</span><span class="fu">rename_with</span>(<span class="sc">~</span> <span class="fu">paste0</span>(.x, <span class="st">&quot;_new&quot;</span>))</span>
+<span id="cb1-19"><a href="#cb1-19" tabindex="-1"></a>  )</span>
+<span id="cb1-20"><a href="#cb1-20" tabindex="-1"></a></span>
+<span id="cb1-21"><a href="#cb1-21" tabindex="-1"></a>  candidates <span class="ot">&lt;-</span> pairs <span class="sc">%&gt;%</span></span>
+<span id="cb1-22"><a href="#cb1-22" tabindex="-1"></a>    dplyr<span class="sc">::</span><span class="fu">mutate</span>(</span>
+<span id="cb1-23"><a href="#cb1-23" tabindex="-1"></a>      <span class="at">similarity =</span> <span class="fu">name_sim</span>(taxon_name_old, taxon_name_new),</span>
+<span id="cb1-24"><a href="#cb1-24" tabindex="-1"></a>      <span class="at">same_species =</span> <span class="fu">same_val</span>(Species_old, Species_new),</span>
+<span id="cb1-25"><a href="#cb1-25" tabindex="-1"></a>      <span class="at">same_infraspecies =</span> <span class="fu">same_val</span>(infraspecies_old, infraspecies_new),</span>
+<span id="cb1-26"><a href="#cb1-26" tabindex="-1"></a>      <span class="at">same_author =</span> <span class="fu">same_val</span>(taxon_authors_old, taxon_authors_new),</span>
+<span id="cb1-27"><a href="#cb1-27" tabindex="-1"></a>      <span class="at">same_family =</span> <span class="fu">same_val</span>(family_old, family_new),</span>
+<span id="cb1-28"><a href="#cb1-28" tabindex="-1"></a>      <span class="at">same_year =</span> <span class="fu">same_val</span>(year_actual_old, year_actual_new),</span>
+<span id="cb1-29"><a href="#cb1-29" tabindex="-1"></a>      </span>
+<span id="cb1-30"><a href="#cb1-30" tabindex="-1"></a>      <span class="at">score =</span> <span class="fl">0.40</span> <span class="sc">*</span> similarity <span class="sc">+</span></span>
+<span id="cb1-31"><a href="#cb1-31" tabindex="-1"></a>        <span class="fl">0.25</span> <span class="sc">*</span> same_species <span class="sc">+</span></span>
+<span id="cb1-32"><a href="#cb1-32" tabindex="-1"></a>        <span class="fl">0.10</span> <span class="sc">*</span> same_infraspecies <span class="sc">+</span></span>
+<span id="cb1-33"><a href="#cb1-33" tabindex="-1"></a>        <span class="fl">0.15</span> <span class="sc">*</span> same_author <span class="sc">+</span></span>
+<span id="cb1-34"><a href="#cb1-34" tabindex="-1"></a>        <span class="fl">0.05</span> <span class="sc">*</span> same_family <span class="sc">+</span></span>
+<span id="cb1-35"><a href="#cb1-35" tabindex="-1"></a>        <span class="fl">0.05</span> <span class="sc">*</span> same_year</span>
+<span id="cb1-36"><a href="#cb1-36" tabindex="-1"></a>    ) <span class="sc">%&gt;%</span></span>
+<span id="cb1-37"><a href="#cb1-37" tabindex="-1"></a>    dplyr<span class="sc">::</span><span class="fu">filter</span>(score <span class="sc">&gt;=</span> <span class="fl">0.50</span>)</span>
+<span id="cb1-38"><a href="#cb1-38" tabindex="-1"></a></span>
+<span id="cb1-39"><a href="#cb1-39" tabindex="-1"></a>  <span class="cf">if</span> (<span class="fu">nrow</span>(candidates) <span class="sc">==</span> <span class="dv">0</span><span class="dt">L</span>) {</span>
+<span id="cb1-40"><a href="#cb1-40" tabindex="-1"></a>    <span class="fu">return</span>(tibble<span class="sc">::</span><span class="fu">tibble</span>())</span>
+<span id="cb1-41"><a href="#cb1-41" tabindex="-1"></a>  }</span>
+<span id="cb1-42"><a href="#cb1-42" tabindex="-1"></a></span>
+<span id="cb1-43"><a href="#cb1-43" tabindex="-1"></a>  candidates <span class="sc">%&gt;%</span></span>
+<span id="cb1-44"><a href="#cb1-44" tabindex="-1"></a>    dplyr<span class="sc">::</span><span class="fu">mutate</span>(</span>
+<span id="cb1-45"><a href="#cb1-45" tabindex="-1"></a>      <span class="at">interpretacion =</span> dplyr<span class="sc">::</span><span class="fu">case_when</span>(</span>
+<span id="cb1-46"><a href="#cb1-46" tabindex="-1"></a>        same_species <span class="sc">&amp;</span> same_infraspecies <span class="sc">&amp;</span> <span class="fu">coalesce</span>(infraspecific_rank_old <span class="sc">!=</span> infraspecific_rank_new, <span class="cn">FALSE</span>) <span class="sc">~</span> <span class="st">&quot;Posible cambio de rango&quot;</span>,</span>
+<span id="cb1-47"><a href="#cb1-47" tabindex="-1"></a>        same_species <span class="sc">&amp;</span> <span class="fu">coalesce</span>(Genus_old <span class="sc">!=</span> Genus_new, <span class="cn">FALSE</span>) <span class="sc">~</span> <span class="st">&quot;Posible transferencia de genero&quot;</span>,</span>
+<span id="cb1-48"><a href="#cb1-48" tabindex="-1"></a>        similarity <span class="sc">&gt;=</span> <span class="fl">0.85</span> <span class="sc">&amp;</span> (same_author <span class="sc">|</span> same_year) <span class="sc">~</span> <span class="st">&quot;Posible correccion ortografica&quot;</span>,</span>
+<span id="cb1-49"><a href="#cb1-49" tabindex="-1"></a>        <span class="cn">TRUE</span> <span class="sc">~</span> <span class="st">&quot;Posible reemplazo taxonomico&quot;</span></span>
+<span id="cb1-50"><a href="#cb1-50" tabindex="-1"></a>      ),</span>
+<span id="cb1-51"><a href="#cb1-51" tabindex="-1"></a>      <span class="at">puntuacion =</span> <span class="fu">round</span>(score, <span class="dv">3</span>)</span>
+<span id="cb1-52"><a href="#cb1-52" tabindex="-1"></a>    ) <span class="sc">%&gt;%</span></span>
+<span id="cb1-53"><a href="#cb1-53" tabindex="-1"></a>    dplyr<span class="sc">::</span><span class="fu">select</span>(</span>
+<span id="cb1-54"><a href="#cb1-54" tabindex="-1"></a>      <span class="at">exclusion_observada =</span> taxon_name_old,</span>
+<span id="cb1-55"><a href="#cb1-55" tabindex="-1"></a>      <span class="at">inclusion_observada =</span> taxon_name_new,</span>
+<span id="cb1-56"><a href="#cb1-56" tabindex="-1"></a>      <span class="at">familia =</span> family_new,</span>
+<span id="cb1-57"><a href="#cb1-57" tabindex="-1"></a>      interpretacion,</span>
+<span id="cb1-58"><a href="#cb1-58" tabindex="-1"></a>      puntuacion</span>
+<span id="cb1-59"><a href="#cb1-59" tabindex="-1"></a>    ) <span class="sc">%&gt;%</span></span>
+<span id="cb1-60"><a href="#cb1-60" tabindex="-1"></a>    dplyr<span class="sc">::</span><span class="fu">arrange</span>(dplyr<span class="sc">::</span><span class="fu">desc</span>(puntuacion))</span>
+<span id="cb1-61"><a href="#cb1-61" tabindex="-1"></a>}</span>
+<span id="cb1-62"><a href="#cb1-62" tabindex="-1"></a></span>
+<span id="cb1-63"><a href="#cb1-63" tabindex="-1"></a>compare_versions <span class="ot">&lt;-</span> <span class="cf">function</span>(old, new) {</span>
+<span id="cb1-64"><a href="#cb1-64" tabindex="-1"></a>  removed <span class="ot">&lt;-</span> dplyr<span class="sc">::</span><span class="fu">anti_join</span>(old, new, <span class="at">by =</span> <span class="st">&quot;taxon_name&quot;</span>)</span>
+<span id="cb1-65"><a href="#cb1-65" tabindex="-1"></a>  added <span class="ot">&lt;-</span> dplyr<span class="sc">::</span><span class="fu">anti_join</span>(new, old, <span class="at">by =</span> <span class="st">&quot;taxon_name&quot;</span>)</span>
+<span id="cb1-66"><a href="#cb1-66" tabindex="-1"></a>  candidates <span class="ot">&lt;-</span> <span class="fu">candidate_replacements</span>(removed, added)</span>
+<span id="cb1-67"><a href="#cb1-67" tabindex="-1"></a></span>
+<span id="cb1-68"><a href="#cb1-68" tabindex="-1"></a>  linked_removed <span class="ot">&lt;-</span> <span class="fu">unique</span>(candidates<span class="sc">$</span>exclusion_observada)</span>
+<span id="cb1-69"><a href="#cb1-69" tabindex="-1"></a>  linked_added <span class="ot">&lt;-</span> <span class="fu">unique</span>(candidates<span class="sc">$</span>inclusion_observada)</span>
+<span id="cb1-70"><a href="#cb1-70" tabindex="-1"></a></span>
+<span id="cb1-71"><a href="#cb1-71" tabindex="-1"></a>  <span class="fu">list</span>(</span>
+<span id="cb1-72"><a href="#cb1-72" tabindex="-1"></a>    <span class="at">summary =</span> tibble<span class="sc">::</span><span class="fu">tibble</span>(</span>
+<span id="cb1-73"><a href="#cb1-73" tabindex="-1"></a>      <span class="at">version_anterior =</span> <span class="fu">unique</span>(old<span class="sc">$</span>version),</span>
+<span id="cb1-74"><a href="#cb1-74" tabindex="-1"></a>      <span class="at">version_nueva =</span> <span class="fu">unique</span>(new<span class="sc">$</span>version),</span>
+<span id="cb1-75"><a href="#cb1-75" tabindex="-1"></a>      <span class="at">registros_anteriores =</span> <span class="fu">nrow</span>(old),</span>
+<span id="cb1-76"><a href="#cb1-76" tabindex="-1"></a>      <span class="at">registros_nuevos =</span> <span class="fu">nrow</span>(new),</span>
+<span id="cb1-77"><a href="#cb1-77" tabindex="-1"></a>      <span class="at">inclusiones_observadas =</span> <span class="fu">nrow</span>(added),</span>
+<span id="cb1-78"><a href="#cb1-78" tabindex="-1"></a>      <span class="at">exclusiones_observadas =</span> <span class="fu">nrow</span>(removed),</span>
+<span id="cb1-79"><a href="#cb1-79" tabindex="-1"></a>      <span class="at">cambio_neto =</span> registros_nuevos <span class="sc">-</span> registros_anteriores,</span>
+<span id="cb1-80"><a href="#cb1-80" tabindex="-1"></a>      <span class="at">posibles_reemplazos =</span> <span class="fu">nrow</span>(candidates)</span>
+<span id="cb1-81"><a href="#cb1-81" tabindex="-1"></a>    ),</span>
+<span id="cb1-82"><a href="#cb1-82" tabindex="-1"></a>    <span class="at">candidates =</span> candidates,</span>
+<span id="cb1-83"><a href="#cb1-83" tabindex="-1"></a>    <span class="at">probable_inclusions =</span> added <span class="sc">%&gt;%</span></span>
+<span id="cb1-84"><a href="#cb1-84" tabindex="-1"></a>      dplyr<span class="sc">::</span><span class="fu">filter</span>(<span class="sc">!</span>taxon_name <span class="sc">%in%</span> linked_added) <span class="sc">%&gt;%</span></span>
+<span id="cb1-85"><a href="#cb1-85" tabindex="-1"></a>      dplyr<span class="sc">::</span><span class="fu">select</span>(taxon_name, family, year_actual),</span>
+<span id="cb1-86"><a href="#cb1-86" tabindex="-1"></a>    <span class="at">probable_exclusions =</span> removed <span class="sc">%&gt;%</span></span>
+<span id="cb1-87"><a href="#cb1-87" tabindex="-1"></a>      dplyr<span class="sc">::</span><span class="fu">filter</span>(<span class="sc">!</span>taxon_name <span class="sc">%in%</span> linked_removed) <span class="sc">%&gt;%</span></span>
+<span id="cb1-88"><a href="#cb1-88" tabindex="-1"></a>      dplyr<span class="sc">::</span><span class="fu">select</span>(taxon_name, family, year_actual)</span>
+<span id="cb1-89"><a href="#cb1-89" tabindex="-1"></a>  )</span>
+<span id="cb1-90"><a href="#cb1-90" tabindex="-1"></a>}</span>
+<span id="cb1-91"><a href="#cb1-91" tabindex="-1"></a></span>
+<span id="cb1-92"><a href="#cb1-92" tabindex="-1"></a>comparison_14_15 <span class="ot">&lt;-</span> <span class="fu">compare_versions</span>(ppendemic_tab14, ppendemic_tab15)</span>
+<span id="cb1-93"><a href="#cb1-93" tabindex="-1"></a>comparison_15_16 <span class="ot">&lt;-</span> <span class="fu">compare_versions</span>(ppendemic_tab15, ppendemic_tab16)</span></code></pre></div>
+</div>
+<div id="magnitud-de-los-cambios" class="section level2">
+<h2>Magnitud de los cambios</h2>
+<div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" tabindex="-1"></a>change_summary <span class="ot">&lt;-</span> dplyr<span class="sc">::</span><span class="fu">bind_rows</span>(</span>
+<span id="cb2-2"><a href="#cb2-2" tabindex="-1"></a>  comparison_14_15<span class="sc">$</span>summary,</span>
+<span id="cb2-3"><a href="#cb2-3" tabindex="-1"></a>  comparison_15_16<span class="sc">$</span>summary</span>
+<span id="cb2-4"><a href="#cb2-4" tabindex="-1"></a>)</span>
+<span id="cb2-5"><a href="#cb2-5" tabindex="-1"></a></span>
+<span id="cb2-6"><a href="#cb2-6" tabindex="-1"></a>knitr<span class="sc">::</span><span class="fu">kable</span>(</span>
+<span id="cb2-7"><a href="#cb2-7" tabindex="-1"></a>  change_summary,</span>
+<span id="cb2-8"><a href="#cb2-8" tabindex="-1"></a>  <span class="at">caption =</span> <span class="st">&quot;Cambios observados y posibles reemplazos entre versiones.&quot;</span></span>
+<span id="cb2-9"><a href="#cb2-9" tabindex="-1"></a>)</span></code></pre></div>
+<table>
+<caption>Cambios observados y posibles reemplazos entre
+versiones.</caption>
+<colgroup>
+<col width="11%" />
+<col width="9%" />
+<col width="14%" />
+<col width="11%" />
+<col width="15%" />
+<col width="15%" />
+<col width="8%" />
+<col width="13%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th align="left">version_anterior</th>
+<th align="left">version_nueva</th>
+<th align="right">registros_anteriores</th>
+<th align="right">registros_nuevos</th>
+<th align="right">inclusiones_observadas</th>
+<th align="right">exclusiones_observadas</th>
+<th align="right">cambio_neto</th>
+<th align="right">posibles_reemplazos</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">V-14</td>
+<td align="left">V-15</td>
+<td align="right">7898</td>
+<td align="right">7892</td>
+<td align="right">18</td>
+<td align="right">24</td>
+<td align="right">-6</td>
+<td align="right">8</td>
+</tr>
+<tr class="even">
+<td align="left">V-15</td>
+<td align="left">V-16</td>
+<td align="right">7892</td>
+<td align="right">8030</td>
+<td align="right">169</td>
+<td align="right">31</td>
+<td align="right">138</td>
+<td align="right">14</td>
+</tr>
+</tbody>
+</table>
+<p>El cambio neto debe interpretarse junto con las inclusiones y
+exclusiones brutas. Por ejemplo, una correccion ortografica genera
+simultaneamente una salida y una entrada aunque represente al mismo
+taxon.</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" tabindex="-1"></a>plot_values <span class="ot">&lt;-</span> <span class="fu">rbind</span>(</span>
+<span id="cb3-2"><a href="#cb3-2" tabindex="-1"></a>  <span class="at">inclusiones =</span> change_summary<span class="sc">$</span>inclusiones_observadas,</span>
+<span id="cb3-3"><a href="#cb3-3" tabindex="-1"></a>  <span class="at">exclusiones =</span> <span class="sc">-</span>change_summary<span class="sc">$</span>exclusiones_observadas,</span>
+<span id="cb3-4"><a href="#cb3-4" tabindex="-1"></a>  <span class="at">cambio_neto =</span> change_summary<span class="sc">$</span>cambio_neto</span>
+<span id="cb3-5"><a href="#cb3-5" tabindex="-1"></a>)</span>
+<span id="cb3-6"><a href="#cb3-6" tabindex="-1"></a></span>
+<span id="cb3-7"><a href="#cb3-7" tabindex="-1"></a><span class="fu">barplot</span>(</span>
+<span id="cb3-8"><a href="#cb3-8" tabindex="-1"></a>  plot_values,</span>
+<span id="cb3-9"><a href="#cb3-9" tabindex="-1"></a>  <span class="at">beside =</span> <span class="cn">TRUE</span>,</span>
+<span id="cb3-10"><a href="#cb3-10" tabindex="-1"></a>  <span class="at">names.arg =</span> <span class="fu">paste</span>(</span>
+<span id="cb3-11"><a href="#cb3-11" tabindex="-1"></a>    change_summary<span class="sc">$</span>version_anterior,</span>
+<span id="cb3-12"><a href="#cb3-12" tabindex="-1"></a>    change_summary<span class="sc">$</span>version_nueva,</span>
+<span id="cb3-13"><a href="#cb3-13" tabindex="-1"></a>    <span class="at">sep =</span> <span class="st">&quot; a &quot;</span></span>
+<span id="cb3-14"><a href="#cb3-14" tabindex="-1"></a>  ),</span>
+<span id="cb3-15"><a href="#cb3-15" tabindex="-1"></a>  <span class="at">col =</span> <span class="fu">c</span>(<span class="st">&quot;#2E8B57&quot;</span>, <span class="st">&quot;#B22222&quot;</span>, <span class="st">&quot;#4169E1&quot;</span>),</span>
+<span id="cb3-16"><a href="#cb3-16" tabindex="-1"></a>  <span class="at">ylab =</span> <span class="st">&quot;Numero de registros&quot;</span>,</span>
+<span id="cb3-17"><a href="#cb3-17" tabindex="-1"></a>  <span class="at">legend.text =</span> <span class="fu">rownames</span>(plot_values),</span>
+<span id="cb3-18"><a href="#cb3-18" tabindex="-1"></a>  <span class="at">args.legend =</span> <span class="fu">list</span>(<span class="at">x =</span> <span class="st">&quot;topleft&quot;</span>, <span class="at">bty =</span> <span class="st">&quot;n&quot;</span>)</span>
+<span id="cb3-19"><a href="#cb3-19" tabindex="-1"></a>)</span>
+<span id="cb3-20"><a href="#cb3-20" tabindex="-1"></a><span class="fu">abline</span>(<span class="at">h =</span> <span class="dv">0</span>, <span class="at">col =</span> <span class="st">&quot;grey40&quot;</span>)</span></code></pre></div>
+<p><img role="img" src="data:image/png;base64,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" /><!-- --></p>
+</div>
+<div id="posibles-correcciones-y-cambios-taxonomicos" class="section level2">
+<h2>Posibles correcciones y cambios taxonomicos</h2>
+<p>Los siguientes pares no deben contarse automaticamente como nuevas
+especies o perdidas de endemicidad. Comparten suficiente informacion
+para considerarlos posibles reemplazos entre versiones.</p>
+<div class="sourceCode" id="cb4"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" tabindex="-1"></a>knitr<span class="sc">::</span><span class="fu">kable</span>(</span>
+<span id="cb4-2"><a href="#cb4-2" tabindex="-1"></a>  comparison_14_15<span class="sc">$</span>candidates,</span>
+<span id="cb4-3"><a href="#cb4-3" tabindex="-1"></a>  <span class="at">caption =</span> <span class="st">&quot;Posibles reemplazos entre V-14 y V-15.&quot;</span></span>
+<span id="cb4-4"><a href="#cb4-4" tabindex="-1"></a>)</span></code></pre></div>
+<table>
+<caption>Posibles reemplazos entre V-14 y V-15.</caption>
+<colgroup>
+<col width="27%" />
+<col width="29%" />
+<col width="12%" />
+<col width="23%" />
+<col width="7%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th align="left">exclusion_observada</th>
+<th align="left">inclusion_observada</th>
+<th align="left">familia</th>
+<th align="left">interpretacion</th>
+<th align="right">puntuacion</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">Lobivia backebergii subsp. wrightiana</td>
+<td align="left">Echinopsis backebergii subsp. wrightiana</td>
+<td align="left">Cactaceae</td>
+<td align="left">Posible transferencia de genero</td>
+<td align="right">0.720</td>
+</tr>
+<tr class="even">
+<td align="left">Lobivia maximiliana subsp. westii</td>
+<td align="left">Echinopsis maximiliana subsp. westii</td>
+<td align="left">Cactaceae</td>
+<td align="left">Posible transferencia de genero</td>
+<td align="right">0.711</td>
+</tr>
+<tr class="odd">
+<td align="left">Pinguicula rosmariae</td>
+<td align="left">Pinguicula rosmarieae</td>
+<td align="left">Lentibulariaceae</td>
+<td align="left">Posible correccion ortografica</td>
+<td align="right">0.631</td>
+</tr>
+<tr class="even">
+<td align="left">Gentianella waygecha</td>
+<td align="left">Gentianella wayqecha</td>
+<td align="left">Gentianaceae</td>
+<td align="left">Posible correccion ortografica</td>
+<td align="right">0.630</td>
+</tr>
+<tr class="odd">
+<td align="left">Lobivia hertrichiana</td>
+<td align="left">Echinopsis hertrichiana</td>
+<td align="left">Cactaceae</td>
+<td align="left">Posible transferencia de genero</td>
+<td align="right">0.561</td>
+</tr>
+<tr class="even">
+<td align="left">Lobivia tegeleriana</td>
+<td align="left">Echinopsis tegeleriana</td>
+<td align="left">Cactaceae</td>
+<td align="left">Posible transferencia de genero</td>
+<td align="right">0.555</td>
+</tr>
+<tr class="odd">
+<td align="left">Soehrensia sandiensis</td>
+<td align="left">Echinopsis sandiensis</td>
+<td align="left">Cactaceae</td>
+<td align="left">Posible transferencia de genero</td>
+<td align="right">0.548</td>
+</tr>
+<tr class="even">
+<td align="left">Lobivia pampana</td>
+<td align="left">Echinopsis pampana</td>
+<td align="left">Cactaceae</td>
+<td align="left">Posible transferencia de genero</td>
+<td align="right">0.522</td>
+</tr>
+</tbody>
+</table>
+<div class="sourceCode" id="cb5"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" tabindex="-1"></a>knitr<span class="sc">::</span><span class="fu">kable</span>(</span>
+<span id="cb5-2"><a href="#cb5-2" tabindex="-1"></a>  comparison_15_16<span class="sc">$</span>candidates,</span>
+<span id="cb5-3"><a href="#cb5-3" tabindex="-1"></a>  <span class="at">caption =</span> <span class="st">&quot;Posibles reemplazos entre V-15 y V-16.&quot;</span></span>
+<span id="cb5-4"><a href="#cb5-4" tabindex="-1"></a>)</span></code></pre></div>
+<table>
+<caption>Posibles reemplazos entre V-15 y V-16.</caption>
+<colgroup>
+<col width="30%" />
+<col width="23%" />
+<col width="10%" />
+<col width="26%" />
+<col width="9%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th align="left">exclusion_observada</th>
+<th align="left">inclusion_observada</th>
+<th align="left">familia</th>
+<th align="left">interpretacion</th>
+<th align="right">puntuacion</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">Peperomia nivalis var. nivalis</td>
+<td align="left">Peperomia nivalis f. nivalis</td>
+<td align="left">Piperaceae</td>
+<td align="left">Posible cambio de rango</td>
+<td align="right">0.760</td>
+</tr>
+<tr class="even">
+<td align="left">Senecio danal</td>
+<td align="left">Senecio danai</td>
+<td align="left">Asteraceae</td>
+<td align="left">Posible correccion ortografica</td>
+<td align="right">0.619</td>
+</tr>
+<tr class="odd">
+<td align="left">Eudema chacasensis</td>
+<td align="left">Eudema chacasense</td>
+<td align="left">Brassicaceae</td>
+<td align="left">Posible correccion ortografica</td>
+<td align="right">0.606</td>
+</tr>
+<tr class="even">
+<td align="left">Tovomita chachapoyasensis</td>
+<td align="left">Clusia chachapoyasensis</td>
+<td align="left">Clusiaceae</td>
+<td align="left">Posible transferencia de genero</td>
+<td align="right">0.604</td>
+</tr>
+<tr class="odd">
+<td align="left">Eudema cuscoensis</td>
+<td align="left">Eudema cuscoense</td>
+<td align="left">Brassicaceae</td>
+<td align="left">Posible correccion ortografica</td>
+<td align="right">0.603</td>
+</tr>
+<tr class="even">
+<td align="left">Eudema peruviana</td>
+<td align="left">Eudema peruvianum</td>
+<td align="left">Brassicaceae</td>
+<td align="left">Posible correccion ortografica</td>
+<td align="right">0.603</td>
+</tr>
+<tr class="odd">
+<td align="left">Eudema limensis</td>
+<td align="left">Eudema limense</td>
+<td align="left">Brassicaceae</td>
+<td align="left">Posible correccion ortografica</td>
+<td align="right">0.597</td>
+</tr>
+<tr class="even">
+<td align="left">Eudema incurva</td>
+<td align="left">Eudema incurvum</td>
+<td align="left">Brassicaceae</td>
+<td align="left">Posible correccion ortografica</td>
+<td align="right">0.597</td>
+</tr>
+<tr class="odd">
+<td align="left">Peperomia nivalis var. compacta</td>
+<td align="left">Peperomia nivalis f. nivalis</td>
+<td align="left">Piperaceae</td>
+<td align="left">Posible reemplazo taxonomico</td>
+<td align="right">0.571</td>
+</tr>
+<tr class="even">
+<td align="left">Peperomia nivalis var. sanmarcensis</td>
+<td align="left">Peperomia nivalis f. nivalis</td>
+<td align="left">Piperaceae</td>
+<td align="left">Posible reemplazo taxonomico</td>
+<td align="right">0.563</td>
+</tr>
+<tr class="odd">
+<td align="left">Peperomia nivalis var. lepadiphylla</td>
+<td align="left">Peperomia nivalis f. nivalis</td>
+<td align="left">Piperaceae</td>
+<td align="left">Posible reemplazo taxonomico</td>
+<td align="right">0.551</td>
+</tr>
+<tr class="even">
+<td align="left">Tessmanniacanthus chlamydocardioides</td>
+<td align="left">Justicia chlamydocardioides</td>
+<td align="left">Acanthaceae</td>
+<td align="left">Posible transferencia de genero</td>
+<td align="right">0.544</td>
+</tr>
+<tr class="odd">
+<td align="left">Cuatrecasanthus sandemanii</td>
+<td align="left">Critoniopsis sandemanii</td>
+<td align="left">Asteraceae</td>
+<td align="left">Posible transferencia de genero</td>
+<td align="right">0.515</td>
+</tr>
+<tr class="even">
+<td align="left">Hibiscus chancoae</td>
+<td align="left">Sabdariffa chancoae</td>
+<td align="left">Malvaceae</td>
+<td align="left">Posible transferencia de genero</td>
+<td align="right">0.511</td>
+</tr>
+</tbody>
+</table>
+<p>Entre los patrones detectables se encuentran:</p>
+<ul>
+<li>cambios de terminacion, como <code>Eudema chacasensis</code> a
+<code>Eudema chacasense</code>;</li>
+<li>correcciones ortograficas, como <code>Senecio danal</code> a
+<code>Senecio danai</code>;</li>
+<li>cambios de rango, como <code>Peperomia nivalis var. nivalis</code> a
+<code>Peperomia nivalis f. nivalis</code>; y</li>
+<li>posibles transferencias de genero, como especies de
+<code>Lobivia</code> que aparecen posteriormente bajo
+<code>Echinopsis</code>.</li>
+</ul>
+<p>Estos casos requieren validacion contra sinonimos, identificadores
+taxonomicos estables o la historia nomenclatural de WCVP.</p>
+</div>
+<div id="posibles-inclusiones" class="section level2">
+<h2>Posibles inclusiones</h2>
+<p>Despues de retirar los candidatos a reemplazo, los nombres restantes
+son las inclusiones con mayor probabilidad de representar
+incorporaciones a la lista. La version V-16 concentra numerosas
+inclusiones publicadas recientemente.</p>
+<div class="sourceCode" id="cb6"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" tabindex="-1"></a>inclusions_15_16 <span class="ot">&lt;-</span> comparison_15_16<span class="sc">$</span>probable_inclusions</span>
+<span id="cb6-2"><a href="#cb6-2" tabindex="-1"></a></span>
+<span id="cb6-3"><a href="#cb6-3" tabindex="-1"></a>inclusion_families <span class="ot">&lt;-</span> inclusions_15_16 <span class="sc">%&gt;%</span></span>
+<span id="cb6-4"><a href="#cb6-4" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">count</span>(family, <span class="at">name =</span> <span class="st">&quot;posibles_inclusiones&quot;</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb6-5"><a href="#cb6-5" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">arrange</span>(dplyr<span class="sc">::</span><span class="fu">desc</span>(posibles_inclusiones)) <span class="sc">%&gt;%</span></span>
+<span id="cb6-6"><a href="#cb6-6" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">slice_head</span>(<span class="at">n =</span> <span class="dv">15</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb6-7"><a href="#cb6-7" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">rename</span>(<span class="at">familia =</span> family)</span>
+<span id="cb6-8"><a href="#cb6-8" tabindex="-1"></a></span>
+<span id="cb6-9"><a href="#cb6-9" tabindex="-1"></a>knitr<span class="sc">::</span><span class="fu">kable</span>(</span>
+<span id="cb6-10"><a href="#cb6-10" tabindex="-1"></a>  inclusion_families,</span>
+<span id="cb6-11"><a href="#cb6-11" tabindex="-1"></a>  <span class="at">caption =</span> <span class="st">&quot;Familias con mas posibles inclusiones entre V-15 y V-16.&quot;</span></span>
+<span id="cb6-12"><a href="#cb6-12" tabindex="-1"></a>)</span></code></pre></div>
+<table>
+<caption>Familias con mas posibles inclusiones entre V-15 y
+V-16.</caption>
+<thead>
+<tr class="header">
+<th align="left">familia</th>
+<th align="right">posibles_inclusiones</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">Acanthaceae</td>
+<td align="right">28</td>
+</tr>
+<tr class="even">
+<td align="left">Araceae</td>
+<td align="right">28</td>
+</tr>
+<tr class="odd">
+<td align="left">Piperaceae</td>
+<td align="right">22</td>
+</tr>
+<tr class="even">
+<td align="left">Orchidaceae</td>
+<td align="right">17</td>
+</tr>
+<tr class="odd">
+<td align="left">Passifloraceae</td>
+<td align="right">9</td>
+</tr>
+<tr class="even">
+<td align="left">Bromeliaceae</td>
+<td align="right">6</td>
+</tr>
+<tr class="odd">
+<td align="left">Asteraceae</td>
+<td align="right">5</td>
+</tr>
+<tr class="even">
+<td align="left">Malvaceae</td>
+<td align="right">5</td>
+</tr>
+<tr class="odd">
+<td align="left">Gesneriaceae</td>
+<td align="right">4</td>
+</tr>
+<tr class="even">
+<td align="left">Annonaceae</td>
+<td align="right">2</td>
+</tr>
+<tr class="odd">
+<td align="left">Crassulaceae</td>
+<td align="right">2</td>
+</tr>
+<tr class="even">
+<td align="left">Lauraceae</td>
+<td align="right">2</td>
+</tr>
+<tr class="odd">
+<td align="left">Moraceae</td>
+<td align="right">2</td>
+</tr>
+<tr class="even">
+<td align="left">Poaceae</td>
+<td align="right">2</td>
+</tr>
+<tr class="odd">
+<td align="left">Solanaceae</td>
+<td align="right">2</td>
+</tr>
+</tbody>
+</table>
+<div class="sourceCode" id="cb7"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" tabindex="-1"></a>recent_inclusions <span class="ot">&lt;-</span> inclusions_15_16 <span class="sc">%&gt;%</span></span>
+<span id="cb7-2"><a href="#cb7-2" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">filter</span>(<span class="sc">!</span><span class="fu">is.na</span>(year_actual), year_actual <span class="sc">&gt;=</span> <span class="dv">2024</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb7-3"><a href="#cb7-3" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">arrange</span>(dplyr<span class="sc">::</span><span class="fu">desc</span>(year_actual)) <span class="sc">%&gt;%</span></span>
+<span id="cb7-4"><a href="#cb7-4" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">slice_head</span>(<span class="at">n =</span> <span class="dv">25</span>)</span>
+<span id="cb7-5"><a href="#cb7-5" tabindex="-1"></a></span>
+<span id="cb7-6"><a href="#cb7-6" tabindex="-1"></a>knitr<span class="sc">::</span><span class="fu">kable</span>(</span>
+<span id="cb7-7"><a href="#cb7-7" tabindex="-1"></a>  recent_inclusions,</span>
+<span id="cb7-8"><a href="#cb7-8" tabindex="-1"></a>  <span class="at">caption =</span> <span class="st">&quot;Ejemplos de posibles inclusiones publicadas desde 2024.&quot;</span></span>
+<span id="cb7-9"><a href="#cb7-9" tabindex="-1"></a>)</span></code></pre></div>
+<table>
+<caption>Ejemplos de posibles inclusiones publicadas desde
+2024.</caption>
+<thead>
+<tr class="header">
+<th align="left">taxon_name</th>
+<th align="left">family</th>
+<th align="right">year_actual</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">Anthurium aldavei</td>
+<td align="left">Araceae</td>
+<td align="right">2025</td>
+</tr>
+<tr class="even">
+<td align="left">Aristolochia guillermoi</td>
+<td align="left">Aristolochiaceae</td>
+<td align="right">2025</td>
+</tr>
+<tr class="odd">
+<td align="left">Gynoxys yasgolgensis</td>
+<td align="left">Asteraceae</td>
+<td align="right">2025</td>
+</tr>
+<tr class="even">
+<td align="left">Justicia huallagensis</td>
+<td align="left">Acanthaceae</td>
+<td align="right">2025</td>
+</tr>
+<tr class="odd">
+<td align="left">Justicia oxapampensis</td>
+<td align="left">Acanthaceae</td>
+<td align="right">2025</td>
+</tr>
+<tr class="even">
+<td align="left">Anthurium castilloae</td>
+<td align="left">Araceae</td>
+<td align="right">2025</td>
+</tr>
+<tr class="odd">
+<td align="left">Justicia rojasiae</td>
+<td align="left">Acanthaceae</td>
+<td align="right">2025</td>
+</tr>
+<tr class="even">
+<td align="left">Agarista eugeniifolia</td>
+<td align="left">Ericaceae</td>
+<td align="right">2025</td>
+</tr>
+<tr class="odd">
+<td align="left">Anthurium divisoriense</td>
+<td align="left">Araceae</td>
+<td align="right">2025</td>
+</tr>
+<tr class="even">
+<td align="left">Aphelandra floribunda</td>
+<td align="left">Acanthaceae</td>
+<td align="right">2025</td>
+</tr>
+<tr class="odd">
+<td align="left">Ayapana sprucei</td>
+<td align="left">Asteraceae</td>
+<td align="right">2025</td>
+</tr>
+<tr class="even">
+<td align="left">Justicia werffii</td>
+<td align="left">Acanthaceae</td>
+<td align="right">2025</td>
+</tr>
+<tr class="odd">
+<td align="left">Justicia schunkei</td>
+<td align="left">Acanthaceae</td>
+<td align="right">2025</td>
+</tr>
+<tr class="even">
+<td align="left">Justicia spathuliformis</td>
+<td align="left">Acanthaceae</td>
+<td align="right">2025</td>
+</tr>
+<tr class="odd">
+<td align="left">Justicia cajamarcensis</td>
+<td align="left">Acanthaceae</td>
+<td align="right">2025</td>
+</tr>
+<tr class="even">
+<td align="left">Justicia lallanii</td>
+<td align="left">Acanthaceae</td>
+<td align="right">2025</td>
+</tr>
+<tr class="odd">
+<td align="left">Jungia alba</td>
+<td align="left">Asteraceae</td>
+<td align="right">2025</td>
+</tr>
+<tr class="even">
+<td align="left">Justicia lactiflora</td>
+<td align="left">Acanthaceae</td>
+<td align="right">2025</td>
+</tr>
+<tr class="odd">
+<td align="left">Justicia baguensis</td>
+<td align="left">Acanthaceae</td>
+<td align="right">2025</td>
+</tr>
+<tr class="even">
+<td align="left">Justicia saccata</td>
+<td align="left">Acanthaceae</td>
+<td align="right">2025</td>
+</tr>
+<tr class="odd">
+<td align="left">Nototriche chambii</td>
+<td align="left">Malvaceae</td>
+<td align="right">2025</td>
+</tr>
+<tr class="even">
+<td align="left">Aniba taftii</td>
+<td align="left">Lauraceae</td>
+<td align="right">2025</td>
+</tr>
+<tr class="odd">
+<td align="left">Anthurium bongarense</td>
+<td align="left">Araceae</td>
+<td align="right">2025</td>
+</tr>
+<tr class="even">
+<td align="left">Anthurium sandanielense</td>
+<td align="left">Araceae</td>
+<td align="right">2025</td>
+</tr>
+<tr class="odd">
+<td align="left">Aphelandra calciferi</td>
+<td align="left">Acanthaceae</td>
+<td align="right">2025</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="posibles-exclusiones" class="section level2">
+<h2>Posibles exclusiones</h2>
+<p>Los nombres retirados que no tienen un reemplazo candidato son
+posibles exclusiones. Una exclusion puede deberse a que el taxon dejo de
+considerarse aceptado o exclusivamente peruano, pero esa causa no puede
+determinarse solo con estas tablas.</p>
+<div class="sourceCode" id="cb8"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" tabindex="-1"></a>exclusions_15_16 <span class="ot">&lt;-</span> comparison_15_16<span class="sc">$</span>probable_exclusions</span>
+<span id="cb8-2"><a href="#cb8-2" tabindex="-1"></a></span>
+<span id="cb8-3"><a href="#cb8-3" tabindex="-1"></a>exclusion_families <span class="ot">&lt;-</span> exclusions_15_16 <span class="sc">%&gt;%</span></span>
+<span id="cb8-4"><a href="#cb8-4" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">count</span>(family, <span class="at">name =</span> <span class="st">&quot;posibles_exclusiones&quot;</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb8-5"><a href="#cb8-5" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">arrange</span>(dplyr<span class="sc">::</span><span class="fu">desc</span>(posibles_exclusiones)) <span class="sc">%&gt;%</span></span>
+<span id="cb8-6"><a href="#cb8-6" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">rename</span>(<span class="at">familia =</span> family)</span>
+<span id="cb8-7"><a href="#cb8-7" tabindex="-1"></a></span>
+<span id="cb8-8"><a href="#cb8-8" tabindex="-1"></a>knitr<span class="sc">::</span><span class="fu">kable</span>(</span>
+<span id="cb8-9"><a href="#cb8-9" tabindex="-1"></a>  exclusion_families,</span>
+<span id="cb8-10"><a href="#cb8-10" tabindex="-1"></a>  <span class="at">caption =</span> <span class="st">&quot;Familias de las posibles exclusiones entre V-15 y V-16.&quot;</span></span>
+<span id="cb8-11"><a href="#cb8-11" tabindex="-1"></a>)</span></code></pre></div>
+<table>
+<caption>Familias de las posibles exclusiones entre V-15 y
+V-16.</caption>
+<thead>
+<tr class="header">
+<th align="left">familia</th>
+<th align="right">posibles_exclusiones</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">Piperaceae</td>
+<td align="right">6</td>
+</tr>
+<tr class="even">
+<td align="left">Apocynaceae</td>
+<td align="right">3</td>
+</tr>
+<tr class="odd">
+<td align="left">Orchidaceae</td>
+<td align="right">2</td>
+</tr>
+<tr class="even">
+<td align="left">Acanthaceae</td>
+<td align="right">1</td>
+</tr>
+<tr class="odd">
+<td align="left">Aspleniaceae</td>
+<td align="right">1</td>
+</tr>
+<tr class="even">
+<td align="left">Clusiaceae</td>
+<td align="right">1</td>
+</tr>
+<tr class="odd">
+<td align="left">Gentianaceae</td>
+<td align="right">1</td>
+</tr>
+<tr class="even">
+<td align="left">Myristicaceae</td>
+<td align="right">1</td>
+</tr>
+<tr class="odd">
+<td align="left">Rubiaceae</td>
+<td align="right">1</td>
+</tr>
+</tbody>
+</table>
+<div class="sourceCode" id="cb9"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" tabindex="-1"></a>knitr<span class="sc">::</span><span class="fu">kable</span>(</span>
+<span id="cb9-2"><a href="#cb9-2" tabindex="-1"></a>  exclusions_15_16 <span class="sc">%&gt;%</span> dplyr<span class="sc">::</span><span class="fu">arrange</span>(family),</span>
+<span id="cb9-3"><a href="#cb9-3" tabindex="-1"></a>  <span class="at">caption =</span> <span class="st">&quot;Posibles exclusiones entre V-15 y V-16.&quot;</span></span>
+<span id="cb9-4"><a href="#cb9-4" tabindex="-1"></a>)</span></code></pre></div>
+<table>
+<caption>Posibles exclusiones entre V-15 y V-16.</caption>
+<thead>
+<tr class="header">
+<th align="left">taxon_name</th>
+<th align="left">family</th>
+<th align="right">year_actual</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">Dyschoriste ciliata</td>
+<td align="left">Acanthaceae</td>
+<td align="right">1891</td>
+</tr>
+<tr class="even">
+<td align="left">Mandevilla polyantha</td>
+<td align="left">Apocynaceae</td>
+<td align="right">1932</td>
+</tr>
+<tr class="odd">
+<td align="left">Mandevilla horrida</td>
+<td align="left">Apocynaceae</td>
+<td align="right">2007</td>
+</tr>
+<tr class="even">
+<td align="left">Mandevilla pristina</td>
+<td align="left">Apocynaceae</td>
+<td align="right">2007</td>
+</tr>
+<tr class="odd">
+<td align="left">Thelypteris rosei</td>
+<td align="left">Aspleniaceae</td>
+<td align="right">1967</td>
+</tr>
+<tr class="even">
+<td align="left">Tovomita weberbaueri</td>
+<td align="left">Clusiaceae</td>
+<td align="right">1923</td>
+</tr>
+<tr class="odd">
+<td align="left">Gentianella poculifera</td>
+<td align="left">Gentianaceae</td>
+<td align="right">1993</td>
+</tr>
+<tr class="even">
+<td align="left">Virola weberbaueri</td>
+<td align="left">Myristicaceae</td>
+<td align="right">1926</td>
+</tr>
+<tr class="odd">
+<td align="left">Epidendrum echinatiantherum</td>
+<td align="left">Orchidaceae</td>
+<td align="right">2023</td>
+</tr>
+<tr class="even">
+<td align="left">Fernandezia pastorelliae</td>
+<td align="left">Orchidaceae</td>
+<td align="right">2014</td>
+</tr>
+<tr class="odd">
+<td align="left">Peperomia foliiflora</td>
+<td align="left">Piperaceae</td>
+<td align="right">1798</td>
+</tr>
+<tr class="even">
+<td align="left">Peperomia cereoides var. cereoides</td>
+<td align="left">Piperaceae</td>
+<td align="right">NA</td>
+</tr>
+<tr class="odd">
+<td align="left">Peperomia cereoides var. reducta</td>
+<td align="left">Piperaceae</td>
+<td align="right">2004</td>
+</tr>
+<tr class="even">
+<td align="left">Peperomia cymbifolia var. goodspeedii</td>
+<td align="left">Piperaceae</td>
+<td align="right">2005</td>
+</tr>
+<tr class="odd">
+<td align="left">Peperomia cymbifolia var. occidentalis</td>
+<td align="left">Piperaceae</td>
+<td align="right">2023</td>
+</tr>
+<tr class="even">
+<td align="left">Peperomia cymbifolia var. cymbifolia</td>
+<td align="left">Piperaceae</td>
+<td align="right">NA</td>
+</tr>
+<tr class="odd">
+<td align="left">Exostema bicolor</td>
+<td align="left">Rubiaceae</td>
+<td align="right">1841</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="cambios-netos-por-familia" class="section level2">
+<h2>Cambios netos por familia</h2>
+<p>El balance por familia ayuda a identificar grupos que requieren una
+revision prioritaria. Este balance incluye tanto cambios taxonomicos
+como posibles incorporaciones o exclusiones reales.</p>
+<div class="sourceCode" id="cb10"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1" tabindex="-1"></a>family_change <span class="ot">&lt;-</span> dplyr<span class="sc">::</span><span class="fu">full_join</span>(</span>
+<span id="cb10-2"><a href="#cb10-2" tabindex="-1"></a>  ppendemic_tab15 <span class="sc">%&gt;%</span> dplyr<span class="sc">::</span><span class="fu">count</span>(family, <span class="at">name =</span> <span class="st">&quot;v15&quot;</span>),</span>
+<span id="cb10-3"><a href="#cb10-3" tabindex="-1"></a>  ppendemic_tab16 <span class="sc">%&gt;%</span> dplyr<span class="sc">::</span><span class="fu">count</span>(family, <span class="at">name =</span> <span class="st">&quot;v16&quot;</span>),</span>
+<span id="cb10-4"><a href="#cb10-4" tabindex="-1"></a>  <span class="at">by =</span> <span class="st">&quot;family&quot;</span></span>
+<span id="cb10-5"><a href="#cb10-5" tabindex="-1"></a>) <span class="sc">%&gt;%</span></span>
+<span id="cb10-6"><a href="#cb10-6" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">mutate</span>(</span>
+<span id="cb10-7"><a href="#cb10-7" tabindex="-1"></a>    <span class="at">v15 =</span> tidyr<span class="sc">::</span><span class="fu">replace_na</span>(v15, <span class="dv">0</span><span class="dt">L</span>),</span>
+<span id="cb10-8"><a href="#cb10-8" tabindex="-1"></a>    <span class="at">v16 =</span> tidyr<span class="sc">::</span><span class="fu">replace_na</span>(v16, <span class="dv">0</span><span class="dt">L</span>),</span>
+<span id="cb10-9"><a href="#cb10-9" tabindex="-1"></a>    <span class="at">change =</span> v16 <span class="sc">-</span> v15</span>
+<span id="cb10-10"><a href="#cb10-10" tabindex="-1"></a>  ) <span class="sc">%&gt;%</span></span>
+<span id="cb10-11"><a href="#cb10-11" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">arrange</span>(dplyr<span class="sc">::</span><span class="fu">desc</span>(<span class="fu">abs</span>(change)), family)</span>
+<span id="cb10-12"><a href="#cb10-12" tabindex="-1"></a></span>
+<span id="cb10-13"><a href="#cb10-13" tabindex="-1"></a>knitr<span class="sc">::</span><span class="fu">kable</span>(</span>
+<span id="cb10-14"><a href="#cb10-14" tabindex="-1"></a>  <span class="fu">head</span>(family_change, <span class="dv">20</span>),</span>
+<span id="cb10-15"><a href="#cb10-15" tabindex="-1"></a>  <span class="at">caption =</span> <span class="st">&quot;Mayores cambios absolutos por familia entre V-15 y V-16.&quot;</span></span>
+<span id="cb10-16"><a href="#cb10-16" tabindex="-1"></a>)</span></code></pre></div>
+<table>
+<caption>Mayores cambios absolutos por familia entre V-15 y
+V-16.</caption>
+<thead>
+<tr class="header">
+<th align="left">family</th>
+<th align="right">v15</th>
+<th align="right">v16</th>
+<th align="right">change</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">Araceae</td>
+<td align="right">186</td>
+<td align="right">214</td>
+<td align="right">28</td>
+</tr>
+<tr class="even">
+<td align="left">Acanthaceae</td>
+<td align="right">147</td>
+<td align="right">174</td>
+<td align="right">27</td>
+</tr>
+<tr class="odd">
+<td align="left">Orchidaceae</td>
+<td align="right">1153</td>
+<td align="right">1168</td>
+<td align="right">15</td>
+</tr>
+<tr class="even">
+<td align="left">Piperaceae</td>
+<td align="right">667</td>
+<td align="right">680</td>
+<td align="right">13</td>
+</tr>
+<tr class="odd">
+<td align="left">Passifloraceae</td>
+<td align="right">66</td>
+<td align="right">75</td>
+<td align="right">9</td>
+</tr>
+<tr class="even">
+<td align="left">Bromeliaceae</td>
+<td align="right">313</td>
+<td align="right">319</td>
+<td align="right">6</td>
+</tr>
+<tr class="odd">
+<td align="left">Asteraceae</td>
+<td align="right">878</td>
+<td align="right">883</td>
+<td align="right">5</td>
+</tr>
+<tr class="even">
+<td align="left">Malvaceae</td>
+<td align="right">126</td>
+<td align="right">131</td>
+<td align="right">5</td>
+</tr>
+<tr class="odd">
+<td align="left">Gesneriaceae</td>
+<td align="right">54</td>
+<td align="right">58</td>
+<td align="right">4</td>
+</tr>
+<tr class="even">
+<td align="left">Annonaceae</td>
+<td align="right">43</td>
+<td align="right">45</td>
+<td align="right">2</td>
+</tr>
+<tr class="odd">
+<td align="left">Apocynaceae</td>
+<td align="right">75</td>
+<td align="right">73</td>
+<td align="right">-2</td>
+</tr>
+<tr class="even">
+<td align="left">Crassulaceae</td>
+<td align="right">44</td>
+<td align="right">46</td>
+<td align="right">2</td>
+</tr>
+<tr class="odd">
+<td align="left">Lauraceae</td>
+<td align="right">89</td>
+<td align="right">91</td>
+<td align="right">2</td>
+</tr>
+<tr class="even">
+<td align="left">Moraceae</td>
+<td align="right">5</td>
+<td align="right">7</td>
+<td align="right">2</td>
+</tr>
+<tr class="odd">
+<td align="left">Poaceae</td>
+<td align="right">131</td>
+<td align="right">133</td>
+<td align="right">2</td>
+</tr>
+<tr class="even">
+<td align="left">Solanaceae</td>
+<td align="right">312</td>
+<td align="right">314</td>
+<td align="right">2</td>
+</tr>
+<tr class="odd">
+<td align="left">Aristolochiaceae</td>
+<td align="right">14</td>
+<td align="right">15</td>
+<td align="right">1</td>
+</tr>
+<tr class="even">
+<td align="left">Asparagaceae</td>
+<td align="right">4</td>
+<td align="right">5</td>
+<td align="right">1</td>
+</tr>
+<tr class="odd">
+<td align="left">Brassicaceae</td>
+<td align="right">74</td>
+<td align="right">75</td>
+<td align="right">1</td>
+</tr>
+<tr class="even">
+<td align="left">Cactaceae</td>
+<td align="right">187</td>
+<td align="right">188</td>
+<td align="right">1</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="recomendaciones-de-interpretacion" class="section level2">
+<h2>Recomendaciones de interpretacion</h2>
+<ol style="list-style-type: decimal">
+<li>Usar <code>taxon_name</code> para describir entradas y salidas
+observadas.</li>
+<li>Revisar primero los posibles reemplazos antes de comunicar
+descubrimientos o perdidas.</li>
+<li>Confirmar las posibles inclusiones y exclusiones con WCVP y sus
+identificadores estables.</li>
+<li>No interpretar una exclusion como perdida biologica o
+extincion.</li>
+<li>Reportar siempre las versiones y fechas comparadas.</li>
+</ol>
+<p>El procedimiento presentado es reproducible y sirve como filtro
+inicial. Una evaluacion taxonomica definitiva requiere fuentes externas
+que documenten sinonimias, cambios de distribucion y decisiones
+nomenclaturales.</p>
+</div>
+
+
+
+<!-- code folding -->
+
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>
